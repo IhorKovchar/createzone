@@ -16,6 +16,7 @@ export default async function PostsList({search, sort, page}: IPostsListProps) {
         }
     } : {}
 
+
     const [posts, total] = await Promise.all([
         prisma.post.findMany({
             where,

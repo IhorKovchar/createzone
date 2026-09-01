@@ -13,7 +13,6 @@ import fs from 'fs/promises'
 import { Theme } from "@prisma/client";
 import { isValidTheme } from "@/lib/theme/theme";
 import { cookies } from "next/headers";
-import { error } from "console";
 
 export async function registerUser(formData: FormData) {
     const validation = RegisterSchema.safeParse({
